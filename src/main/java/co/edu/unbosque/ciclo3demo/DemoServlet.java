@@ -31,14 +31,14 @@ public class DemoServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		String nombre = request.getParameter("nombre");
-		String cedula = request.getParameter("cedula");
+		String usuario = request.getParameter("Usuario");
+		String contraseña = request.getParameter("Contraseña");
 		PrintWriter writer = response.getWriter();
-		if(nombre != null && cedula != null) {
-			writer.println(" Bienvenido "+nombre+" a mi JSP");
+		if(usuario != null && contraseña != null) {
+			writer.println(" Bienvenido "+usuario+" a mi JSP");
 		}
 		else
-			writer.println("Error:Nombre o cédula faltante!");
+			writer.println("Error:Usuario o Contraseña faltante!");
 		writer.close();
 	}
 	
