@@ -14,6 +14,13 @@ html{
     box-sizing: border-box; /*Hack para Box Model*/
     scroll-snap-type: y mandatory;
 }
+/* Scroll Snap*/
+.servicios,
+.navegacion-principal,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 
 *, *:before, *:after{
     box-sizing: inherit;
@@ -45,12 +52,37 @@ body{
     text-align: center;
     border: none;
 }
+.boton1{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
 @media (min-width: 768px) {
     .boton{
-        width: auto;
+        width: 45%;
     }
 }
+
+@media (min-width: 768px) {
+    .boton1{
+        width: 50%;
+    }
+}
+
 .boton:hover{
+    cursor: pointer;
+
+}
+
+.boton1:hover{
     cursor: pointer;
 
 }
@@ -134,84 +166,19 @@ h1,h2,h3{
     color: var(--oscuro);
 }
 
-/*Hero*/
-.hero{
-    background-image: url(../img/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    position: relative;
-    margin-bottom: 2rem;
-}
- .contenido-hero{
-     position: absolute;
-     /*background-color: rgba(0,0,0,.7);*/
-     background-color: rgb(0 0 0 / 70%);
-     width: 100%;
-     height: 100%;
-
-     /*con este código alineamos lo que sea vertical y horizontlamente*/
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-}   
-.contenido-hero h2,
-.contenido-hero p{
-    color: var(--blanco);
-}
-.contenido-hero .ubicacion{
-    display: flex;
-    align-items: flex-end;
-}
-
-
-/**Servicios**/
-@media (min-width: 768px) {
-    .servicios {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1rem;  
-    }
-}
-.servicio{
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-
-}
-.servicio h3{
-    color: var(--secundario);
-    font-weight: 400;
-
-}
-.servicio p{
-    line-height: 2;
-    text-align: center;
-}
-.servicio .iconos{
-    height: 15rem;
-    width: 15rem;
-    background-color: var(--primario);
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-evenly;/*permite alinear horizontalmente*/
-    align-items: center;/*permite alinear vetticalmente*/
-
-}
 /**Contacto**/
 .formulario{
    background-color: var(--gris);
    width: min(60rem,100%) ; /**Compara cual es el valor mas pequeño y lo aplica**/
    margin: 0 auto;/**Lo utilizamos siempre que la clase padre no tenga un displayflex**/
    padding: 2rem;
-   border-radius: 1rem;
-   
+   border-radius: 1rem;  
 }
 
 .formulario fieldset{
     border: none;
 }
+
 .formulario legend{
    text-align: center;
    font-size: 1.8rem;
@@ -248,7 +215,7 @@ h1,h2,h3{
 }
 .input-text {
     width: 100%;
-    border: none;
+    border-color: #212121;
     padding: 1.5rem;
     border-radius: .5rem;
 }

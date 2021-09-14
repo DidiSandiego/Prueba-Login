@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="conexion.*"%>
@@ -13,6 +14,17 @@
 <body>
 	<h1>Bienvenido a la tienda generica</h1>
 
+=======
+<%@ page language='java' contentType='text/html;charset=iso-8859-1'%> 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Mi primer JSP</h1>
+>>>>>>> a4e00d17797ac057c4f998663f192468d7d339ba
 	<form method="get" action="./DemoServlet">
 		<table>
 			<tr>
@@ -26,7 +38,10 @@
 			</tr>
 		</table>
 	</form>
+<<<<<<< HEAD
 	
+=======
+>>>>>>> a4e00d17797ac057c4f998663f192468d7d339ba
 </body>
 
 </html>

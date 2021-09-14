@@ -7,22 +7,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Generica</title>
-    <link rel="preload" href="./normalize.css" as="style">
-    <link rel="stylesheet" href="./normalize.css">
+    <title>TiendaGenerica</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="./view.css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+ <header>
+        <h1 class="titulo">Tienda Genérica</h1>
+   </header>
   <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
-            <a href="nosotros.html">Quienes Somos</a>
-            <a href="#">Nuestros Clientes</a>
-            <a href="#">Contáctanos</a>
+            <a href="#">Usuarios</a>
+            <a href="nosotros.html">Clientes</a>
+            <a href="#">Proveedores</a>
+            <a href="#">Productos</a>
+            <a href="#">Ventas</a>
+            <a href="#">Reportes</a>
         </nav>
     </div>
 </body>
